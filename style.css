@@ -40,15 +40,22 @@ header
     z-index:1000;
     display:flex;
     align-items:center;
-    justify-content: space-between;
     background:rgb(27, 27, 27,.3);
     padding:1rem 9%;
     box-shadow:0 .5rem 1rem rgba(255, 0, 0, 0.2);
 }
-
+header .logo{
+    display:contents;
+font-size:2rem;
+font-weight: bolder;
+color:white;
+}
+header .navbar{
+    margin-left:200px;
+}
 header .navbar a{
-    font-size:18px;
-    margin-left:7rem;
+    font-size:15px;
+    margin-left:5rem;
     color:white;
 }
 header .navbar a:hover{
@@ -56,7 +63,6 @@ header .navbar a:hover{
 }
 .imglogo
 {
-    padding-right:.5rem;
     width:60px;
     height:60px;
 }
@@ -66,6 +72,7 @@ header::selection
     color:#fff;
 }
 #menu-bar{
+    margin-left:500px;
     font-size:3rem;
     cursor:pointer;
     color:#fff;
@@ -181,6 +188,7 @@ span{
     display:initial;
   }
   header .navbar{
+    margin-left:0px;
     position:absolute;
     top:100%;right:0;left:0;
     background: #f7f7f7;
