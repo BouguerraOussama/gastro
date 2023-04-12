@@ -25,3 +25,11 @@ var swiper = new Swiper(".home-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// * barre de recherche
+let searchBtn = document.querySelector('#searchBtn');
+let searchBox = document.querySelector("#searchBox");
+
+searchBtn.onclick () =function(){
+    searchBox.classList.add('active');
+}

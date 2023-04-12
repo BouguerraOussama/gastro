@@ -75,6 +75,7 @@ section{
 
 /* header */
 
+
 .header{
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -87,6 +88,36 @@ section{
   padding: 2rem 9%;
 }
 
+.header .search{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.header .searchBox{
+  position:absolute;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.header .searchBox input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 2em;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 .header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
@@ -809,6 +840,7 @@ section{
     display: block;
     margin: 2rem;
   }
+  
 
   .home .slide .content{
     width: 40rem;
