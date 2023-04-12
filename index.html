@@ -1,66 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- !balise head: La balise "head" en HTML est utilisée pour fournir des informations sur la page Web -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page d'accueil</title>
-  <!-- * titre de la page -->
-  <link rel="stylesheet" href="./style.css" />
-  <script src="https://kit.fontawesome.com/a94050807a.js" crossorigin="anonymous"></script>
-
-  <!--* ici on implemente le css ... on doit inclure donc le fichier ou se trouve le code css  a l'aide d'une balise link qui prend comme href le path de ce dernier -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/a94050807a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<!--!balise body: ici on écrit le code html c'est la squelette de la page web-->
-
 <body>
-  <header>
-    <a href="#" class="logo"><img src="./images/logo 2.png" class="imglogo" />Recette Paradis</a>
-    <div id="menu-bar" class="fas fa-bars"></div>
-    <nav class="navbar">
-      <a href="#">Page d'accueil</a>
-      <a href="">Galerie</a>
-      <a href="">Contactez-nous</a>
-    </nav>
-  </header>
-  <!-- !balise div: -->
-  <div class="container">
-    <!--  debut carte1-->
-    <a href="sucre.html">
-      <div class="carte">
-        <!-- !balise img: -->
-        <img src="./images/pancake.jpg" alt="pancake" />
-        <div class="intro">
-          <!-- !balise h(1/2..): -->
-          <h1>Recettes Sucrées</h1>
-          <!-- !balise p: -->
-          <p>
-            Découvrez <span>une sélection </span> de délicieuses douceurs
-            sucrées pour satisfaire vos envies de gourmandises.
-          </p>
-        </div>
-      </div>
-    </a>
-    <!-- fin carte1 -->
-    <!--  debut carte2-->
-    <a href="sucre.html">
-      <div class="carte">
-        <img src="./images/hamburger.jpg" alt="hamburger" />
-        <div class="intro">
-          <h1>Recettes Salées</h1>
-          <p>
-            Découvrez <span> notre sélection</span> de recettes salées pour
-            tous les goûts et toutes les occasions.
-          </p>
-        </div>
-      </div>
-    </a>
-    <!-- fin carte2 -->
-  </div>
+    
+    <!-- header -->
 
-  <script src="main.js"></script>
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fa-solid fa-cake-candles"></i> Sucrerie </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#product">product</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+    </header>
+
+    <!-- header end -->
+
+    <!-- shopping cart -->
+
+    <div class="cart-items-container">
+
+        <div id="close-form" class="fas fa-times"></div>
+        <h3 class="title">checkout</h3>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>bakery item 1</h3>
+                <div class="price">$45.99/-</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>bakery item 2</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>bakery item 3</h3>
+                <div class="price">$29.99/-</div>
+            </div>
+        </div>
+
+        <a href="javascript: void(0)" class="btn"> checkout </a>
+
+    </div>
+
+    <!-- shopping cart end-->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/slider1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Bienvenue</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/slider2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Merci D'avoir Choisi Sucrerie Pour Vos Besoins En Pâtisserie</h3>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+
+    <!-- about us -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Bienvenue chez <span>Sucrerie</span></h3>
+                <p>où nous nous spécialisons dans la création de pâtisseries délicieuses et irrésistibles. Notre mission est d'apporter un peu de douceur dans votre journée, que vous veniez pour une petite gâterie ou pour commander un gâteau sur mesure pour une occasion spéciale.</p>
+                <p>Chez Sucrerie, nous sommes fiers d'utiliser uniquement les ingrédients les plus frais et de la plus haute qualité dans tous nos produits. Nos boulangers et pâtissiers experts sont passionnés par leur métier et sont dévoués à créer des desserts et des pâtisseries exceptionnels qui raviront vos papilles.</p>
+                    
+                    <p>Nous sommes également heureux d'offrir un large éventail de produits pour répondre à tous vos besoins de pâtisseries. Que vous recherchiez des gâteaux, des tartes, des petits gâteaux, des macarons, des chocolats ou des biscuits, nous avons quelque chose pour tout le monde.</p>
+                    
+                    <p>Merci d'avoir choisi Sucrerie pour vos besoins en pâtisserie. Nous avons hâte de vous faire découvrir nos délicieuses créations.</p>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- about us end-->
+
+    <!-- product -->
+
+    <section class="product" id="product">
+
+        <h1 class="heading">our <span> products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$15.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$18.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$11.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$15.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="price">$27.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>apple pie</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="price">$25.99</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- product end-->
+
+
+
+    <!-- weekly promotions -->
+
+    <section class="promotion">
+
+        <h1 class="heading">weekly <span>promotions</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <h3>chocolat cake</h3>
+                    <p>Nos gâteaux au chocolat sont fabriqués avec les meilleurs ingrédients pour offrir une texture moelleuse et un goût riche en chocolat.</p>
+                </div>
+
+                <img src="images/promotion1.png" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/promotion2.png" alt="">
+                <div class="content">
+                    <h3>nut cake</h3>
+                    <p>Nos gâteaux aux noix sont Fabriqués avec des noix de qualité supérieure et d'autres ingrédients frais, ils offrent une texture moelleuse et une saveur riche et délicieuse.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- weekly promotions ends -->
+
+    <!-- contact -->
+
+    <section class="order" id="contact">
+
+        <h1 class="heading"><span>Contact</span> Us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/order.gif" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="email address">
+                    <input type="number" placeholder="phone number">
+                </div>
+
+
+                <textarea placeholder="Description" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>address</h3>
+                <p>Tunisie</p>
+                <div class="share">
+                    <a href="javascript: void(0)" class="fab fa-facebook-f"></a>
+                    <a href="javascript: void(0)" class="fab fa-twitter"></a>
+                    <a href="javascript: void(0)" class="fab fa-instagram"></a>
+                    <a href="javascript: void(0)" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="javascript: void(0)" class="link">reazrzrazrza@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>call us</h3>
+                <p>+216 00 000 000</p>
+            </div>
+
+            <div class="box">
+                <h3> opening hours</h3>
+                <p>Monday - Friday: 9:00 - 23:00 <br> Saturday: 8:00 - 24:00 </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+
 </body>
-
 </html>
