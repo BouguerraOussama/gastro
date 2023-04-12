@@ -1,257 +1,283 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap");
+
 /* ! le fichier css sert a donner du style a la page web c'est comme la peau de la page web */
 /* *on peut donner un style au differentes elements en appelant ces element au debut puit on ouvre les {on met le design dedans } */
-*{ 
-    margin: 0px;
-    padding: 0px;
-    font-family:'Nunito',sans-serif;
-    box-sizing:border-box;
-    outline:none;border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition:all .2s linear;
-}
-html{
-    font-size:62%;
-    overflow-x:hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top:6rem;
-}
-body{
-    background-image: url("./images/background.jpg");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-     /* display flex ca veut dire que le body de la page web maintenant ajuste les elements de ses fils celon l'espace disponible */
-    display: flex; 
-     /* on ajuste les elements au centre*/
-    justify-content:center;
-    /* le  */
-    height:100vh;
-    align-items: center;
-    backdrop-filter: blur(5px);
-}
-header
-{
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    z-index:1000;
-    display:flex;
-    align-items:center;
-    background:rgb(27, 27, 27,.3);
-    padding:1rem 9%;
-    box-shadow:0 .5rem 1rem rgba(255, 0, 0, 0.2);
-}
-header .logo{
-    display:contents;
-font-size:2rem;
-font-weight: bolder;
-color:white;
-}
-header .navbar{
-    margin-left:200px;
-}
-header .navbar a{
-    font-size:15px;
-    margin-left:5rem;
-    color:white;
-}
-header .navbar a:hover{
-    color:rgb(43,72,188);
-}
-.imglogo
-{
-    width:60px;
-    height:60px;
-}
-/* quand tu select */
-header::selection
-{  /* quand tu click*/
-    color:#fff;
-}
-#menu-bar{
-    margin-left:500px;
-    font-size:3rem;
-    cursor:pointer;
-    color:#fff;
-    border:.1rem solid #fff;
-    border-radius: .3rem;
-    padding:.5rem 1.5rem;
-    display:none;
-}
-.container{
-    display: flex;
-}
-.carte{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
 
-img{
-    height: 500px;
-    width: 425px; 
-}
-.intro{
-    height: 70px;
-    width: 425px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute; 
-    bottom: 121px;
-    background:rgb(27, 27, 27,.5);
-    color: white;
-}
-h1{
-    font-size: 20px;
-    margin: 20px;
-}
-p{
-    font-size: 20px;
-    margin: 20px;
-    visibility: hidden;
-    opacity: 0;
-}
-span{
-    font-weight: bold;
-}
-.carte:hover{
-    cursor: pointer;
-     
-}
-.carte:hover .intro{
-    height: 200px;
-    bottom: 100px;
-    
-}
-.carte:hover p{
-    opacity: 1;
-    visibility: visible;
-}
-.carte:hover img{
-    transform: scale(1.1) rotate(-3deg);
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
-
-
-
-
-@media(max-width:991px)
-{
-  img{
-    width: 380px; 
-  }
-  .intro{
-    width: 380px; 
-  }
-    html{
-        font-size:55%;
-    }
-    header{
-        padding:1rem;
-    }
+body {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display flex ca veut dire que le body de la page web maintenant ajuste les elements de ses fils celon l'espace disponible */
+  display: flex;
+  /* on ajuste les elements au centre*/
+  justify-content: center;
+  /* le  */
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  backdrop-filter: blur(5px);
 }
-@media(max-width:960px)
-{
-  img{
-    width: 335px; 
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background: rgb(27, 27, 27, 0.3);
+  padding: 1rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.2);
+}
+
+header .logo {
+  display: contents;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+header .navbar {
+  margin-left: 200px;
+}
+
+header .navbar a {
+  font-size: 15px;
+  margin-left: 5rem;
+  color: white;
+}
+
+header .navbar a:hover {
+  color: rgb(43, 72, 188);
+}
+
+.imglogo {
+  width: 60px;
+  height: 60px;
+}
+
+/* quand tu selectionne */
+header::selection {
+  /* quand tu clique*/
+  color: #fff;
+}
+
+#menu-bar {
+  margin-left: 500px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+  border: 0.1rem solid #fff;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+
+.container {
+  display: flex;
+}
+
+.carte {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+img {
+  height: 500px;
+  width: 425px;
+}
+
+.intro {
+  height: 70px;
+  width: 425px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 121px;
+  background: rgb(27, 27, 27, 0.5);
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.carte:hover {
+  cursor: pointer;
+}
+
+.carte:hover .intro {
+  height: 200px;
+  bottom: 100px;
+}
+
+.carte:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carte:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+@media (max-width: 991px) {
+  img {
+    width: 380px;
   }
 
-  .intro{
-    width: 335px; 
+  .intro {
+    width: 380px;
+  }
+
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1rem;
   }
 }
-@media(max-width:869px)
-{
-  img{
-    width: 290px; 
+
+@media (max-width: 960px) {
+  img {
+    width: 335px;
   }
 
-  .intro{
-    width: 290px; 
+  .intro {
+    width: 335px;
   }
 }
-@media(max-width:780px)
-{
-  img{
-    width: 245px; 
+
+@media (max-width: 869px) {
+  img {
+    width: 290px;
   }
 
-  .intro{
-    width: 245px; 
+  .intro {
+    width: 290px;
   }
-  #menu-bar
-  {
-    display:initial;
+}
+
+@media (max-width: 780px) {
+  img {
+    width: 245px;
   }
-  header .navbar{
-    margin-left:0px;
-    position:absolute;
-    top:100%;right:0;left:0;
+
+  .intro {
+    width: 245px;
+  }
+
+  #menu-bar {
+    display: initial;
+  }
+
+  header .navbar {
+    margin-left: 0px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
     background: #f7f7f7;
-    border-top:.1rem solid red;
-    clip-path:polygon(0 0,100% 0,100% 0,0 0);
-  }
-  header .navbar.active{
-    clip-path:polygon(0 0, 100% 0, 100% 100%,0% 100%);
-  }
-   header .navbar a{
-    margin:1.5rem;
-    padding:1.5rem;
-    display:block;
-    border:.2rem solid rgba(0,0,0,0.1);
-    border-left:.5rem solid red;
-    color:black;
-  }
-}
-@media(max-width:662px)
-{
-img{
-    width: 200px; 
+    border-top: 0.1rem solid red;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  .intro{
-    width: 200px; 
-  }
-}
-@media(max-width:600px)
-{
-img{
-    width: 170px; 
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
-  .intro{
-    width: 170px; 
-  }
-}
-@media(max-width:509px)
-{
-img{
-    width: 130px; 
-  }
-
-  .intro{
-    width: 130px; 
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    border-left: 0.5rem solid red;
+    color: black;
   }
 }
 
-@media(max-width:420px)
-{
-img{
-    width: 100px; 
+@media (max-width: 662px) {
+  img {
+    width: 200px;
   }
-  html{
-    font-size:50%;
+  .container{
+    display: block;
+  }
+
+  .intro {
+    width: 200px;
+  }
 }
 
-  .intro{
-    width: 100px; 
+@media (max-width: 600px) {
+  img {
+    width: 170px;
   }
+
+  .intro {
+    width: 170px;
+  }
+}
+
+@media (max-width: 509px) {
+  img {
+    width: 130px;
+  }
+
+  .intro {
+    width: 130px;
+  }
+}
+
+@media (max-width: 420px) {
+  img {
+    width: 100px;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .intro {
+    width: 100px;
+  }
+
   h1 {
     font-size: 15px;
     margin: 10px;
-}
+  }
 }

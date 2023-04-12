@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- !balise head: La balise "head" en HTML est utilisée pour fournir des informations sur la page Web -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page d'accueil</title>
-    <!-- * titre de la page -->
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/a94050807a.js" crossorigin="anonymous"></script>
 
-    <!--* ici on implemente le css ... on doit inclure donc le fichier ou se trouve le code css  a l'aide d'une balise link qui prend comme href le path de ce dernier -->
-  </head>
-  <!--!balise body: ici on écrit le code html c'est la squelette de la page web-->
-  <body>
-    <header>
-      <a href="#" class="logo"><img src="./images/logo 2.png" class="imglogo">Recette Paradis</a>
-        <div id="menu-bar" class="fas fa-bars"></div>
+<head>
+  <!-- !balise head: La balise "head" en HTML est utilisée pour fournir des informations sur la page Web -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page d'accueil</title>
+  <!-- * titre de la page -->
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/a94050807a.js" crossorigin="anonymous"></script>
+
+  <!--* ici on implemente le css ... on doit inclure donc le fichier ou se trouve le code css  a l'aide d'une balise link qui prend comme href le path de ce dernier -->
+</head>
+<!--!balise body: ici on écrit le code html c'est la squelette de la page web-->
+
+<body>
+  <header>
+    <a href="#" class="logo"><img src="./images/logo 2.png" class="imglogo" />Recette Paradis</a>
+    <div id="menu-bar" class="fas fa-bars"></div>
     <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="">Galerie</a>
-    <a href="">Contactez-nous</a>
-</nav>
+      <a href="#">Page d'accueil</a>
+      <a href="">Galerie</a>
+      <a href="">Contactez-nous</a>
+    </nav>
   </header>
-    <!-- !balise div: -->
-    <div class="container">
-      <!--  debut carte1-->
+  <!-- !balise div: -->
+  <div class="container">
+    <!--  debut carte1-->
+    <a href="sucre.html">
       <div class="carte">
         <!-- !balise img: -->
-        <img src="./images/pancake.jpg" alt="pancake"/>
+        <img src="./images/pancake.jpg" alt="pancake" />
         <div class="intro">
           <!-- !balise h(1/2..): -->
           <h1>Recettes Sucrées</h1>
@@ -39,21 +42,25 @@
           </p>
         </div>
       </div>
-      <!-- fin carte1 -->
-      <!--  debut carte2-->
+    </a>
+    <!-- fin carte1 -->
+    <!--  debut carte2-->
+    <a href="sucre.html">
       <div class="carte">
         <img src="./images/hamburger.jpg" alt="hamburger" />
         <div class="intro">
           <h1>Recettes Salées</h1>
           <p>
-            Découvrez <span> notre sélection</span> de recettes salées pour tous
-            les goûts et toutes les occasions.
+            Découvrez <span> notre sélection</span> de recettes salées pour
+            tous les goûts et toutes les occasions.
           </p>
         </div>
       </div>
-    </div>
-  </div>
+    </a>
     <!-- fin carte2 -->
-    <script src="main.js"></script>
-  </body>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
