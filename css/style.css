@@ -894,15 +894,11 @@ border-radius: 0 8px 8px 0;
 }
 @media (max-width: 1204px){
   .categories .select-box{
-    width:170px;
-    flex-direction:column;
     margin-left:420px;
   }
 }
   @media (max-width: 1039px){
     .categories .select-box{
-      width:170px;
-      flex-direction:column;
       margin-left:370px;
     }
 }
@@ -926,8 +922,6 @@ border-radius: 0 8px 8px 0;
   }
   /* ! */
   .categories .select-box{
-    width:170px;
-    flex-direction:column;
     margin-left:270px;
   }
   .header .navbar{
@@ -959,8 +953,6 @@ border-radius: 0 8px 8px 0;
 }
 @media (max-width: 538px){
   .categories .select-box{
-    width:170px;
-    flex-direction:column;
     margin-left:190px;
   }
 }
