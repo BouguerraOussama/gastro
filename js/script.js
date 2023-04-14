@@ -55,7 +55,6 @@ closeBtn.onclick = function(){
     //afficher la loupe
     searchBtn.classList.remove('active');
     searchBtn.classList.add('unactive');
-    
 }
 let button_next=document.querySelector('.swiper-button-next');
 
@@ -82,7 +81,7 @@ div_box.classList.add("box");
 let div_img=document.createElement("div");
 div_img.classList.add("image");
 let img = document.createElement("img");
-img.src = "../images/"+table_img[j]+".jpg";
+img.src = "../images/"+table_img[j];
 div_img.appendChild(img);
 // end
 
@@ -139,25 +138,25 @@ box_container.appendChild(div_box);
 }
   }
   // cakes
-const cakes_name=["aaaa","zzzz","wwww"];
-const cakes_price= [30,40,50];
-const cakes_img=["product-1","product-2","product-3"];
+const cakes_name=["Marbré","Blondies","Brownies","Cannelés","Cupcake citron myrtille","cupcakes au chocolat"];
+const cakes_price= [7,5,3,6,9,8];
+const cakes_img=["cake-marbré.jpeg","cake-blondies.jpeg","cake-brownies.jpeg","cake-cannelés.jpeg","cake-cupcake citron myrtille.jpeg","cake-cupcakes au chocolat.jpeg"];
 
 // gateaux
-const gateaux_name=["aslema","ena","win"];
-const gateaux_price=[70,80,90];
-const gateaux_img=["product-1","product-2","product-3"];
+const gateaux_name=["Entremets chocolat caramel","Entremets noisettes","Fromboisier","Millefeuille Opéra","Opéra"];
+const gateaux_price=[40,35,45,10,5];
+const gateaux_img=["gateau-entremets chocolat caramel.jpeg","gateau-entremets noisettes.jpeg","gateau-framboisier.jpeg","gateau-Millefeuille Opéra.jpg","gateau-opéra.jpg"];
 
 // viennoiseries
-const viennoiseries_name=["ahla","labes","cv"];
-const viennoiseries_price=[100,200,300];
-const viennoiseries_img=["product-1","product-2","product-3"];
+const viennoiseries_name=["Croissants","Croissants avec confiture","viennoiserie à la figue"];
+const viennoiseries_price=[5,7,7];
+const viennoiseries_img=["vin-croissant.jpeg","vin-croissants.jpeg","vin-viennoiserie à la figue.jpeg"];
 
 //tartes
-const tartes_name=["aaaa","zzzz","wwww"];
-const tartes_price= [30,40,50];
-const tartes_img=["product-1","product-2","product-3"];
-
+const tartes_name=["cookies","éclair passion framboise","paris brest"];
+const tartes_price= [3,4,50];
+const tartes_img=["tarte-cookies.jpeg","tarte-éclair passion framboise.jpg","tarte-paris brest.jpeg"];
+var index=0;
 product_list(cakes_name,cakes_price,cakes_img);
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
@@ -171,23 +170,23 @@ while (box_container.lastElementChild) {
     box_container.removeChild(box_container.lastElementChild);
 }
 if (selected.textContent=="cakes")
-{  
+{   index=0;
     product_list(cakes_name,cakes_price,cakes_img);
 }
 else if (selected.textContent=="gateaux")
-{
+{   index=1;
     product_list(gateaux_name,gateaux_price,gateaux_img);
 }
 else if(selected.textContent=="viennoiseries")
-{
+{   index=2;
     product_list(viennoiseries_name,viennoiseries_price,viennoiseries_img);
 }
 else if(selected.textContent=="tartes")
-{
+{   index=3;
     product_list(tartes_name,tartes_price,tartes_img);
 }
 else
-{
+{   index=4;
     product_list(pain_name,pain_price,pain_img);
 }
   });
