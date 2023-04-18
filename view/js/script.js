@@ -28,7 +28,7 @@ var swiper = new Swiper(".home-slider", {
 let searchBtn = document.querySelector('.searchBtn');
 let closeBtn= document.querySelector('.closeBtn');
 let searchBox= document.querySelector('.searchBox');
-
+let search=document.getElementById("chercher");
 searchBtn.onclick = function(){
     // afficher la barre de recherche
     searchBox.classList.add("active");
@@ -41,7 +41,6 @@ searchBtn.onclick = function(){
     navbar.classList.remove('active');
     //reset icone
     menu.classList.remove('fa-times');
-
 }
 
 closeBtn.onclick = function(){
@@ -55,7 +54,9 @@ closeBtn.onclick = function(){
     //afficher la loupe
     searchBtn.classList.remove('active');
     searchBtn.classList.add('unactive');
+    search.value="";
 }
+
 let button_next=document.querySelector('.swiper-button-next');
 
 setInterval(() => {
@@ -433,5 +434,7 @@ const chercher = () => {
         }
     }
 }
+
 document.getElementById("chercher").addEventListener("input", chercher);
+
 

@@ -892,16 +892,7 @@ border-radius: 0 8px 8px 0;
   }
 
 }
-@media (max-width: 1204px){
-  .categories .select-box{
-    margin-left:420px;
-  }
-}
-  @media (max-width: 1039px){
-    .categories .select-box{
-      margin-left:370px;
-    }
-}
+
 @media (max-width: 768px){
   /* ! */
   #menu-btn{
@@ -921,9 +912,6 @@ border-radius: 0 8px 8px 0;
     transform: rotate(180deg);
   }
   /* ! */
-  .categories .select-box{
-    margin-left:270px;
-  }
   .header .navbar{
     position: absolute;
     top: 99%;
@@ -951,21 +939,9 @@ border-radius: 0 8px 8px 0;
   }
 
 }
-@media (max-width: 538px){
-  .categories .select-box{
-    margin-left:190px;
-  }
-}
+
 @media (max-width: 450px){
-  .searchBtn{
-    transform: translateX(70px) ;
-    font-size: 2.7rem;
-    text-decoration: none;
-  }
-  .closeBtn{
-    transform: translateX(70px) ;
-    font-size: 3rem;
-  }
+
   html{
     font-size: 50%;
   }

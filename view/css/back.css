@@ -1,0 +1,86 @@
+* {
+  /* Change your font family */
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.header i {
+  font-size: 5rem;
+  color: #c98d83;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header h1 {
+  color: #783b31;
+}
+
+.header p {
+  color: #783b31;
+}
+.button-link {
+  display: inline-block;
+  background-color: #c98d83;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button-link:hover {
+  display: inline-block;
+  background-color: #783b31;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+table {
+  width: 100vw;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #c98d83;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #783b31;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #783b31;
+}
